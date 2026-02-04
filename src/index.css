@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --primary-color-light: #66a5ad;
+  --primary-color: #004643;
+  --primary-color-dark: #022b2b;
+
+  /* secondary */
+  --secondary-color-light: #ffdac1;
+  --secondary-color: #f9bc60;
+  --secondary-color-dark: #e89b3b;
+
+  --tertiary-color-light: #ff9a9a;
+  --tertiary-color: #e16162;
+  --tertiary-color-dark: #d84747;
+
+  /* grey */
+  --gray-1: #f2f2f2;
+  --gray-2: #e6e6e6;
+  --gray-3: #d9d9d9;
+  --gray-4: #bfbfbf;
+  --gray-5: #a6a6a6;
+  --gray-6: #8c8c8c;
+  --gray-7: #737373;
+  --gray-8: #595959;
+  --gray-9: #404040;
+
+  /* other color */
+  --black: #000000;
+  --white: #ffffff;
+  --off-white: #f8f8f8;
+  --low-opacity-white: rgba(248, 248, 248, 0.7);
+
+  /* common colors */
+  --background-color: var(--primary-color-dark);
+  --text-color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  margin-top: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Century Gothic", Sans-Serif;
+  overflow-x: hidden;
+}
