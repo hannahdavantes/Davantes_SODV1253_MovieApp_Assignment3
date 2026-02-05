@@ -8,18 +8,19 @@
 
 :root {
   /* primary */
-  --primary-color-light: #66a5ad;
-  --primary-color: #004643;
-  --primary-color-dark: #022b2b;
+  --primary-color-dark: #071b26;
+  --primary-color: #0d2a3a;
+  --primary-color-light: #1f3f52;
 
   /* secondary */
-  --secondary-color-light: #ffdac1;
-  --secondary-color: #f9bc60;
-  --secondary-color-dark: #e89b3b;
+  --secondary-color-dark: #6f0c0c;
+  --secondary-color: #9b1111;
+  --secondary-color-light: #c33a3a;
 
-  --tertiary-color-light: #ff9a9a;
-  --tertiary-color: #e16162;
-  --tertiary-color-dark: #d84747;
+  /* tertiary */
+  --tertiary-color-dark: #c7771e;
+  --tertiary-color: #eea234;
+  --tertiary-color-light: #f0cc8a;
 
   /* grey */
   --gray-1: #f2f2f2;
@@ -38,9 +39,13 @@
   --off-white: #f8f8f8;
   --low-opacity-white: rgba(248, 248, 248, 0.7);
 
+  /* fonts */
+  --font-body: "Inconsolata", monospace;
+  --font-heading: "Arvo", serif;
+
   /* common colors */
-  --background-color: var(--primary-color-dark);
-  --text-color: var(--black);
+  --background-color: var(--primary-color);
+  --text-color: var(--off-white);
 }
 
 html {
@@ -54,6 +59,7 @@ html {
     font-size: 60%;
   }
 }
+
 @media (max-width: 768px) {
   html {
     font-size: 50%;
@@ -63,6 +69,16 @@ html {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: "Century Gothic", Sans-Serif;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-weight: 400;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
