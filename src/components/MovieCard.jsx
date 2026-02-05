@@ -20,9 +20,17 @@ const MovieCard = ({ movie, onClick }) => {
       </div>
 
       <div className="content">
-        <h3 className="title">{movie.title}</h3>
+        <h3 className="title" title={movie.title}>
+          {movie.title}
+        </h3>
         <p className="info">
-          {year} • <FaStar /> {movie.vote_average?.toFixed(1)}
+          <span className="year">{year}</span>
+          <span className="rating">
+            <FaStar className="star" />
+            <span className="score">
+              {movie.vote_average?.toFixed(1) ?? "—"}
+            </span>
+          </span>
         </p>
       </div>
     </Wrapper>

@@ -55,13 +55,34 @@ const Wrapper = styled.article`
     color: var(--tertiary-color-dark);
     font-size: 2.8rem;
     line-height: 1.2;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    min-height: calc(2.8rem * 1.2 * 2);
   }
 
   .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
     font-family: var(--font-body);
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 2.4rem;
     color: var(--tertiary-color-light);
+  }
+  .rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .star {
+    display: block;
+    font-size: 1.1em;
   }
 `;
 
