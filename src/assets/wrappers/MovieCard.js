@@ -53,15 +53,14 @@ const Wrapper = styled.article`
   .title {
     font-family: var(--font-heading);
     color: var(--tertiary-color-dark);
-    font-size: 3.6rem;
-    letter-spacing: 0.02em;
-    font-size: 1.6rem;
+    font-size: 2.8rem;
     line-height: 1.2;
   }
 
   .info {
     font-family: var(--font-body);
     font-size: 1.4rem;
+    text-align: center;
     color: var(--tertiary-color-light);
   }
 `;

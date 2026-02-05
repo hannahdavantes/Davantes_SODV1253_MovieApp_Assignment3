@@ -12,16 +12,8 @@ const Wrapper = styled.section`
     font-size: 2.8rem;
     color: var(--secondary-color);
     text-align: center;
-  }
-
-  .movie-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.4rem;
-
-    width: 100%;
-    max-width: 140rem;
-    margin: 0 auto;
+    font-family: var(--font-heading);
+    letter-spacing: 0.04em;
   }
 `;
 

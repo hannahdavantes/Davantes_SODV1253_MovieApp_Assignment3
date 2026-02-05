@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Wrapper from "../assets/wrappers/TopRatedMovies";
-import MovieCard from "../components/MovieCard";
+import MovieList from "../components/MovieList";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -28,11 +28,10 @@ const TopRatedMovies = () => {
   return (
     <Wrapper>
       <h1 className="title">Top Rated Movies</h1>
-      <div className="movie-container">
-        {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
-      </div>
+      <MovieList
+        movies={movies}
+        onSelectMovie={(movie) => console.log("selected movie:", movie)}
+      />
     </Wrapper>
   );
 };
