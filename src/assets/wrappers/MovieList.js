@@ -10,6 +10,14 @@ const Wrapper = styled.div`
   justify-items: center;
   align-items: start;
 
+  .empty {
+    grid-column: 1 / -1;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: var(--gray-6);
+    text-align: center;
+  }
+
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }

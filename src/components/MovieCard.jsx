@@ -6,7 +6,7 @@ const MovieCard = ({ movie, onClick }) => {
   const year = movie.release_date ? movie.release_date.slice(0, 4) : "—";
 
   return (
-    <Wrapper onClick={onClick} role="button" tabIndex={0}>
+    <Wrapper onClick={onClick}>
       <div className="poster">
         {movie.poster_path ? (
           <img
